@@ -9,10 +9,10 @@ TEAM_BRIAN = DarkRP.createJob("Brian", {
         admin = 0,
         vote = false,
         hasLicense = false,
-		Hobo = true,
-		candemote = false,
-		catagory = "citizens",
-    })
+	Hobo = true,
+	candemote = false,
+	catagory = "citizens",
+	})	 
     TEAM_BRANDON = DarkRP.createJob("Brandon", {
     color = Color(4, 10, 1, 7),
         model = "models/player/zombie_soldier.mdl",
@@ -25,7 +25,7 @@ TEAM_BRIAN = DarkRP.createJob("Brian", {
         vote = false,
         hasLicense = true,
 		})
-		TEAM_SCIENTIST = DarkRP.createJob("Scientist", {
+TEAM_SCIENTIST = DarkRP.createJob("Scientist", {
     color = Color(99, 32, 8, 252),
         model = "/models/player/hostage/hostage_04.mdl",
         description = [[You are an interlecual. You study the laws of phisics and the ways of man. You're aloud to handle narcotics.]],
