@@ -1,7 +1,21 @@
-TEAM_MOB = DarkRP.createJob("Petty Thug", {
+TEAM_GANG = DarkRP.createJob("Petty Thug", {
         color = Color(86, 219, 219, 57),
-        model = "models/player/Group03/male_04.mdl",
-        description = [[Lowest of the low. You lick the shiny shoes of the mobboss.]],
+        model = {"models/player/Group03/Female_01.mdl",
+		        "models/player/Group03/Female_02.mdl",
+                "models/player/Group03/Female_03.mdl",
+		        "models/player/Group03/Female_04.mdl",
+				"models/player/Group03/Female_06.mdl",
+		        "models/player/group03/male_01.mdl",
+		        "models/player/Group03/Male_02.mdl",
+		        "models/player/Group03/male_03.mdl",
+		        "models/player/Group03/Male_04.mdl",
+		        "models/player/Group03/Male_05.mdl",
+		        "models/player/Group03/Male_06.mdl",
+		        "models/player/Group03/Male_07.mdl",
+		        "models/player/Group03/Male_08.mdl",
+		        "models/player/Group03/Male_09.mdl"
+        },				
+        description = [[Lowest of the criminal underworld. Listen to your boss or you'll be demoted quick!]],
         weapons = {"weapon_pumpshotgun2"},
         command = "thug",
         max = 5,
@@ -9,6 +23,7 @@ TEAM_MOB = DarkRP.createJob("Petty Thug", {
         admin = 0,
         vote = false,
         hasLicense = false,
+        category = "Gangsters"
 })
 
 TEAM_OSAMA = DarkRP.createJob("Osama Bin Laden", {
@@ -22,4 +37,72 @@ TEAM_OSAMA = DarkRP.createJob("Osama Bin Laden", {
     admin = 0,
     vote = false,
     hasLicense = false,
+})
+
+TEAM_CITIZEN = DarkRP.createJob("Peasant", {
+	color = Color(20, 150, 20, 255),
+	model = {
+		"models/player/Group01/Female_01.mdl",
+		"models/player/Group01/Female_02.mdl",
+		"models/player/Group01/Female_03.mdl",
+		"models/player/Group01/Female_04.mdl",
+		"models/player/Group01/Female_06.mdl",
+		"models/player/group01/male_01.mdl",
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/male_03.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_05.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_07.mdl",
+		"models/player/Group01/Male_08.mdl",
+		"models/player/Group01/Male_09.mdl"
+	},
+	description = [[You're a peasant. But at least you're not a Brian...]],
+	weapons = {},
+	command = "citizen",
+	max = 0,
+	salary = 30,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Citizens",
+})
+
+TEAM_POLICE = DarkRP.createJob("Police Officer", {
+    color = Color(91, 28, 232, 222),
+    model = "models/player/leet.mdl",
+    description = [[Good cop or bad cop? Your choice. ]],
+    weapons = {"arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "weapon_fiveseven2"},
+    command = "medic",
+    max = 6,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category = "Civil Protection",
+    help = {
+        "Please don't abuse your job",
+        "When you arrest someone they are auto transported to jail.",
+        "They are auto let out of jail after some time",
+        "Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
+        "Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect",
+        "Type /unwanted [Nick|SteamID|Status ID] to clear the suspect",
+        "Type /jailpos to set the jail position"}
+})
+
+TEAM_MOB = DarkRP.createJob("Mobboss", {
+        color = Color(86, 219, 219, 57),
+        model = {"models/player/gman_high.mdl"},				
+        description = [[You run the criminal underworld, you're the mastermind behind it all! Formulate your schemes to make a quick buck. 
+                        You have full control over your thugs, give 'em an offer than can't refuse!]],
+        weapons = {"weapon_pumpshotgun2", "lockpick", "unarrest_stick"},
+        command = "mobboss",
+        max = 1,
+        salary = 60,
+        admin = 0,
+        vote = true,
+        hasLicense = false,
+        NeedToChangeFrom = TEAM_GANG 
+		category = "Gangsters"
 })
