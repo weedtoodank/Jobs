@@ -1,0 +1,43 @@
+TEAM_SWAT = DarkRP.createJob("S.W.A.T", { -- Job Name when displayed on the scoreboard
+    color = Color(25, 25, 170, 255), -- Color of Job (scoreboard/text)
+    model = {"models/player/swat.mdl"}, -- Player model
+    description = [[You bring in the firepower when the cops need it]], -- Description of the job shown in the F4 menu.
+    weapons = {"arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "lockpick"}, -- Weapons that are used.
+    command = "SWAT", -- Command when "/jobname" is types
+    max = 4, -- amount of people that can be this job!
+    salary = 120, -- Salary that this job receives over time.
+    admin = 0, -- Admin only? 0 for none 1 for admin 2 for super admin 3 for RCon only.
+    vote = true, -- Vote for this job?
+    hasLicense = true, -- Has a gun license?
+    help = {
+        "Please don't abuse your job",
+        "When you arrest someone they are auto transported to jail.",
+        "They are auto let out of jail after some time",
+        "Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
+        "Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect",
+        "Type /unwanted [Nick|SteamID|Status ID] to clear the suspect",
+        "Type /jailpos to set the jail position"
+    }
+})
+
+TEAM_SWATLEADER = DarkRP.createJob("SWAT LEADER", { -- Job Name when displayed on the scoreboard
+    color = Color(25, 25, 170, 255), -- Color of Job (scoreboard/text)
+    model = {"models/player/swat.mdl"}, -- Player model
+    description = [[You lead the SWAT squad when the cops need you]], -- Description of the job shown in the F4 menu.
+    weapons = {"arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "lockpick"}, -- Weapons that are used.
+    command = "SWATLEADER", -- Command when "/jobname" is types
+    max = 4, -- amount of people that can be this job!
+    salary = 140, -- Salary that this job receives over time.
+    admin = 0, -- Admin only? 0 for none 1 for admin 2 for super admin 3 for RCon only.
+    vote = true, -- Vote for this job?
+    hasLicense = true, -- Has a gun license?
+    help = {
+        "Please don't abuse your job",
+        "When you arrest someone they are auto transported to jail.",
+        "They are auto let out of jail after some time",
+        "Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
+        "Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect",
+        "Type /unwanted [Nick|SteamID|Status ID] to clear the suspect",
+        "Type /jailpos to set the jail position"
+    }
+})
