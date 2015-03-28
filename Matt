@@ -9,10 +9,12 @@ TEAM_BRIAN = DarkRP.createJob("Brian", {
         admin = 0,
         vote = false,
         hasLicense = false,
-	Hobo = true,
-	candemote = false,
-	catagory = "citizens",
-	})	 
+		Hobo = true,
+		candemote = false,
+		catagory = "citizens",
+})
+    
+    
     TEAM_BRANDON = DarkRP.createJob("Brandon", {
     color = Color(4, 10, 1, 7),
         model = "models/player/zombie_soldier.mdl",
@@ -24,8 +26,10 @@ TEAM_BRIAN = DarkRP.createJob("Brian", {
         admin = 0,
         vote = false,
         hasLicense = true,
-		})
-TEAM_SCIENTIST = DarkRP.createJob("Scientist", {
+})
+		
+		
+		TEAM_SCIENTIST = DarkRP.createJob("Scientist", {
     color = Color(99, 32, 8, 252),
         model = "/models/player/hostage/hostage_04.mdl",
         description = [[You are an interlecual. You study the laws of phisics and the ways of man. You're aloud to handle narcotics.]],
@@ -36,7 +40,9 @@ TEAM_SCIENTIST = DarkRP.createJob("Scientist", {
         admin = 0,
         vote = false,
         hasLicense = false,
-		})
+})
+		
+		
 TEAM_HITMAN = DarkRP.createJob("Hitman", {
     color = Color(99, 252, 118, 8),
         model = "models/player/soldier_stripped.mdl",
@@ -48,7 +54,9 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
         admin = 0,
         vote = false,
         hasLicense = true,
-		})
+})
+		
+		
 TEAM_FRYCOOK = DarkRP.createJob("Frycook", {
     color = Color(75, 191, 23, 34),
         model = "models/player/Group01/female_04.mdl",
@@ -60,7 +68,9 @@ TEAM_FRYCOOK = DarkRP.createJob("Frycook", {
         admin = 0,
         vote = false,
         hasLicense = false,
-		})
+})
+		
+		
 TEAM_MEDIC = DarkRP.createJob("PoliceMedic", {
     color = Color(91, 28, 232, 222),
         model = "models/player/combine_super_soldier.mdl",
@@ -74,5 +84,6 @@ TEAM_MEDIC = DarkRP.createJob("PoliceMedic", {
         hasLicense = true,
 		medic = true,
 		catagory = "Civil Protection",
-		})
+})
+	
 	
