@@ -1,7 +1,7 @@
 TEAM_BRIAN = DarkRP.createJob("Brian", {
         color = Color(96, 95, 242, 10),
         model = "models/player/Group01/male_09.mdl",
-        description = [[You never improve. Therefore you can not earn money nor have possetions. Though you can do whatever else you please. Now just remember your cults phrase. IM GETTING THE FUCK OUTA HEREEEEEEA]],
+        description = [[You never improve. Therefore you can not earn money nor have possessions. Though you can do whatever else you please. Now just remember your cults phrase. IM GETTING THE FUCK OUTA HEREEEEEEA]],
         weapons = {"stunstick", "weapon_bugbait"},
         command = "brian",
         max = 1,
