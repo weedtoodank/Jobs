@@ -4,7 +4,7 @@ TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
         description = [[You are a secret service agent 
 		Protect the mayor at all cost
 		If there is no mayor, you may help police and swat with raids]],
-		 weapons = {"fas2_m3s90"},
+		 weapons = {"weapon_pumpshotgun2"},
         command = "secretservice",
         max = 1,
         salary = 125,
