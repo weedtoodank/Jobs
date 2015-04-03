@@ -1,0 +1,15 @@
+TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
+    color = Color(25, 25, 170, 255),
+        model = "models/player/gman_high.mdl",
+        description = [[You are a secret service agent 
+		Protect the mayor at all cost
+		If there is no mayor, you may help police and swat with raids]],
+		 weapons = {"fas2_m3s90"},
+        command = "secretservice",
+        max = 1,
+        salary = 125,
+        admin = 0,
+        vote = true,
+        hasLicense = false,
+        category = "Civil Protection",
+})
