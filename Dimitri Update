@@ -4,7 +4,7 @@ TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
         description = [[You are a secret service agent 
 		Protect the mayor at all cost
 		If there is no mayor, you may help police and swat with raids]],
-		 weapons = {"weapon_pumpshotgun2"},
+		 weapons = {"fas2_m3s90"},
         command = "secretservice",
         max = 1,
         salary = 125,
@@ -12,4 +12,19 @@ TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
         vote = true,
         hasLicense = false,
         category = "Civil Protection",
+})
+
+TEAM_SHREK = DarkRP.createJob("Shrek", {
+    color = Color(155, 255, 60, 255),
+        model = "models/player/p2_chell.mdl",  ---shrek player model----
+        description = [[Shrek is love
+		Shrek is life.]],
+        weapons = {},----"weapon_rape"-----
+        command = "daddy",
+        max = 1,
+        salary = 0,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+        category = "Citizens",
 })
