@@ -1,0 +1,276 @@
+TEAM_CITIZEN = DarkRP.createJob("Citizen", {
+	color = Color(20, 150, 20, 255),
+	model = {
+		"models/player/Group01/Female_01.mdl",
+		"models/player/Group01/Female_02.mdl",
+		"models/player/Group01/Female_03.mdl",
+		"models/player/Group01/Female_04.mdl",
+		"models/player/Group01/Female_06.mdl",
+		"models/player/group01/male_01.mdl",
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/male_03.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_05.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_07.mdl",
+		"models/player/Group01/Male_08.mdl",
+		"models/player/Group01/Male_09.mdl"
+	},
+	description = [[You're the basic foundation of the city. You have no job, but your 30 dollar handout keeps you going. 
+	Get a job and start making some REAL money you freeloader.
+					 
+	Can raid: No
+	Can mug: No]],
+	weapons = {},
+	command = "citizen",
+	max = 0,
+	salary = 30,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Citizens",
+})
+
+TEAM_BRIAN = DarkRP.createJob("Brian", {
+        color = Color(209, 145, 36, 255),
+        model = "models/player/Group01/male_09.mdl",
+        description = [[You never improve. Therefore you can not earn money nor have possessions. Though you can do whatever else you please.
+		Now just remember your cults phrase. IM GETTING THE FUCK OUTA HEREEEEEEA
+		
+		Can Raid: No
+		Can Mug: No
+		Can Base: No]],
+        weapons = {"weapon_bugbait"},
+        command = "brian",
+        max = 1,
+        salary = 0,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+		Hobo = true,
+		candemote = false,
+		category = "Citizens",
+})
+
+TEAM_FRYCOOK = DarkRP.createJob("Frycook", {
+    color = Color(160, 0, 145, 255),
+        model = "models/player/Group01/female_04.mdl",
+        description = [[You work at Burger King, satisfy the world with your delicious nuggets. Just watch out for Brandon.
+		
+		Can Raid: No 
+		Can Mug: No]],
+        weapons = {},
+        command = "cook",
+        max = 4,
+        salary = 40,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+        category = "Citizens"
+})
+
+TEAM_MAYOR = DarkRP.createJob("Mayor", {
+    color = Color(150, 20, 20, 255),
+    model = {"models/player/breen.mdl"},
+    description = [[The Mayor of the city creates laws to govern the city.
+	If you are the mayor you may create and accept warrants.
+	Type /wanted <name>  to warrant a player.
+	Type /jailpos to set the Jail Position.
+	Type /lockdown initiate a lockdown of the city.
+	Everyone must be inside during a lockdown.
+	The cops patrol the area.
+	/unlockdown to end a lockdown]],
+    weapons = {},
+    command = "mayor",
+    max = 1,
+    salary = 200,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+	mayor = true,
+    category = "Government",
+}) 
+
+TEAM_POLICE = DarkRP.createJob("Police Officer", {
+    color = Color(25, 25, 170, 255),
+    model = "models/player/leet.mdl",
+    description = [[The protector of every citizen that lives in the city.
+		You have the power to arrest criminals and protect innocents.
+		Hit a player with your arrest baton to put them in jail.
+		Bash a player with a stunstick and they may learn to obey the law.
+		The Battering Ram can break down the door of a criminal, with a warrant for their arrest.
+		The Battering Ram can also unfreeze frozen props (if enabled).
+		Type /wanted <name> to alert the public to the presence of a criminal.]],
+    weapons = {"arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "weapon_fiveseven2"},
+    command = "Cop",
+    max = 6,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category = "Government",
+    help = {
+        "Please don't abuse your job",
+        "When you arrest someone they are auto transported to jail.",
+        "They are auto let out of jail after some time",
+        "Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
+        "Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect",
+        "Type /unwanted [Nick|SteamID|Status ID] to clear the suspect",
+        "Type /jailpos to set the jail position"}
+})
+
+TEAM_PMEDIC = DarkRP.createJob("Police Medic", {
+    color = Color(91, 28, 232, 255),
+    model = "models/player/combine_super_soldier.mdl",
+    description = [[You work for the government as a field medic making sure our police force is healthy and ready to go.]],
+    weapons = {"med_kit", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "weapon_fiveseven2"},
+    command = "medic",
+    max = 3,
+    salary = 105,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    NeedToChangeFrom = TEAM_POLICE,
+	medic = true,
+    category = "Government",
+    help = {
+        "Please don't abuse your job",
+        "When you arrest someone they are auto transported to jail.",
+        "They are auto let out of jail after some time",
+        "Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
+        "Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect",
+        "Type /unwanted [Nick|SteamID|Status ID] to clear the suspect",
+        "Type /jailpos to set the jail position" }
+})
+
+TEAM_MOB = DarkRP.createJob("Mobboss", {
+        color = Color(25, 25, 25, 255),
+        model = {"models/player/gman_high.mdl"},				
+        description = [[You run the criminal underworld, you're the mastermind behind it all! Formulate your schemes to make a quick buck. 
+                        You have full control over your thugs, give 'em an offer than can't refuse!]],
+        weapons = {"weapon_pumpshotgun2", "lockpick", "unarrest_stick"},
+        command = "mobboss",
+        max = 1,
+        salary = 60,
+        admin = 0,
+        vote = true,
+        hasLicense = false,
+        NeedToChangeFrom = TEAM_GANG,
+		category = "Gangsters"
+})
+
+TEAM_GANG = DarkRP.createJob("Petty Thug", {
+        color = Color(75, 75, 75, 255),
+        model = {"models/player/Group03/Female_01.mdl",
+		        "models/player/Group03/Female_02.mdl",
+                "models/player/Group03/Female_03.mdl",
+		        "models/player/Group03/Female_04.mdl",
+				"models/player/Group03/Female_06.mdl",
+		        "models/player/group03/male_01.mdl",
+		        "models/player/Group03/Male_02.mdl",
+		        "models/player/Group03/male_03.mdl",
+		        "models/player/Group03/Male_04.mdl",
+		        "models/player/Group03/Male_05.mdl",
+		        "models/player/Group03/Male_06.mdl",
+		        "models/player/Group03/Male_07.mdl",
+		        "models/player/Group03/Male_08.mdl",
+		        "models/player/Group03/Male_09.mdl"
+        },				
+        description = [[Lowest of the criminal underworld. Listen to your boss or you'll be demoted quick!]],
+        weapons = {"weapon_pumpshotgun2"},
+        command = "thug",
+        max = 5,
+        salary = 25,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+        category = "Gangsters"
+})
+
+TEAM_OSAMA = DarkRP.createJob("Osama Bin Laden", {
+    color = Color(86, 219, 219, 57),
+    model = {"models/player/guerilla.mdl"},
+    description = [[Allahu Akbar, You run the terrorist group. You must stay hidden, unless you're planning acts of terror. You *Can* be KOS'd by police.]],
+    weapons = {"weapon_ak472"},
+    command = "osama",
+    max = 1,
+    salary = 0,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+	category = "Criminals"
+})
+
+TEAM_HITMAN = DarkRP.createJob("Hitman", {
+    color = Color(180, 0, 140, 255),
+    model = "models/player/soldier_stripped.mdl",
+    description = [[You're a hitman, you're hired to kill people. You must do it secretly
+                    And 	]],
+    weapons = {},
+    command = "hitman",
+    max = 2,
+    salary = 40,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category  = "Criminals",
+})
+
+TEAM_INTRUDER = DarkRP.createJob("Home Intruder", {
+    color = Color(180, 220, 240, 255),
+    model = "models/player/soldier_stripped.mdl",
+    description = [[You enter peoples houses to steal things.]],
+    weapons = {"lockpick", "basebat", "fas2_sks"},
+    command = "intruder",
+    max = 5,
+    salary = 40,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category  = "Criminals",
+})
+
+TEAM_PRIVATEDETECTIVE = DarkRP.createJob("Private Detective", {
+    color = Color(65, 170, 240, 255),
+    model = "models/player/mossman_arctic.mdl",
+    description = [[You're a private detective. You're hired to solve crimes the police cannot.
+	               You're not bound by police rules - Meaning you can break into houses if hired to.]],
+	weapons = {"stunstick", "lockpick"},
+    command = "Detective",
+    max = 3,
+    salary = 65,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category = "Citizens",
+})
+
+TEAM_SCIENTIST = DarkRP.createJob("Scientist", {
+    color = Color(255, 125, 60, 255),
+    model = "/models/player/hostage/hostage_04.mdl",
+    description = [[You are an intellectual. You study the laws of physics and the ways of man. You're allowed to handle narcotics.]],
+    weapons = {},
+    command = "nerd",
+    max = 2,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category  = "VIP",
+})
+
+TEAM_BRANDON = DarkRP.createJob("Brandon", {
+    color = Color(0, 0, 0, 255),
+    model = "models/player/zombie_soldier.mdl",
+    description = [[You a real nigga. Not just a real nigga but a super nigga. You have a hook to glide across the world. 
+	                You're allowed to help the police and also raid Burger King.]],
+	weapons = {"stunstick"},
+    command = "brandon",
+    max = 1,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category = "VIP",
+})
