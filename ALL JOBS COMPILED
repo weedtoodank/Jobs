@@ -274,3 +274,17 @@ TEAM_BRANDON = DarkRP.createJob("Brandon", {
     hasLicense = true,
     category = "VIP",
 })
+
+TEAM_NIGHTWING = DarkRP.createJob("Nightwing", {
+    color = Color(0, 61, 166, 255),
+    model = "models/player/bobert/nightwing.mdl",
+    description = [[You were once Batman's sidekick, Robin. But after his death and your coming of age 18, you take the nightwing mantel and fight crime.]],
+	weapons = {"stunstick"},
+    command = "nightwing",
+    max = 1,
+    salary = 60,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category = "VIP",
+})
