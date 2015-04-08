@@ -36,7 +36,7 @@ TEAM_LAWYER = DarkRP.createJob("Lawyer", {
         Don't forget the minimal bail is $5,000.]],
         weapons = {},
         command = "lawyer",
-        max = 3,
+        max = 1,
         salary = 70,
         admin = 0,
         vote = false,
