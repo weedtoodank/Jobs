@@ -57,3 +57,19 @@ TEAM_TERRORIST = DarkRP.createJob("Terrorist", {
         hasLicense = false,
         category = "Citizens",
 })
+
+TEAM_BLOOD = DarkRP.createJob("Blood", {
+    color = Color(66, 168, 62, 255),
+        model = "models/player/slow_2.mdl",
+        description = [[ Your a blood
+		your in a gang for fucks sake, fuck the police!
+		You can KOS Crip members, as long as it's not in public.]],
+        weapons = {},
+        command = "blood",
+        max = 5,
+        salary = 0,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+        category = "Citizens",
+})
