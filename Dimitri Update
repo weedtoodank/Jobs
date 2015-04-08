@@ -28,3 +28,32 @@ TEAM_SHREK = DarkRP.createJob("Shrek", {
         hasLicense = false,
         category = "Citizens",
 })
+
+TEAM_LAWYER = DarkRP.createJob("Lawyer", {
+    color = Color(34, 8, 87, 255),
+        model = "",  ---lawyer player model----
+        description = [[You are a lawyer, pay him for bail so the police can unarrest you!
+        Don't forget the minimal bail is $5,000.]],
+        weapons = {},
+        command = "lawyer",
+        max = 3,
+        salary = 70,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+        category = "Citizens",
+})
+
+TEAM_TERRORIST = DarkRP.createJob("Terrorist", {
+    color = Color(85, 220, 220, 255),
+        model = "models/player/phoenix.mdl",  ---terrorist player model----
+        description = [[Under your leader, Osama, you serve and defend him at all cost!]],
+        weapons = {},
+        command = "terror",
+        max = 5,
+        salary = 0,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+        category = "Citizens",
+})
