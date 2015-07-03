@@ -1,0 +1,23 @@
+TEAM_OSAMA = DarkRP.createJob("Osama Bin Laden", {
+    color = Color(86, 219, 219, 57),
+    model = {"models/player/guerilla.mdl"},
+    description = [[Allahu Akbar, You run the terrorist group. You must stay hidden, unless you're planning acts of terror. You *Can* be KOS'd by police.]],
+    weapons = {"weapon_ak472"},
+    command = "osama",
+    max = 1,
+    salary = 0,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+})
+
+
+__________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
