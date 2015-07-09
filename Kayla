@@ -13,3 +13,35 @@ TEAM_OSAMA = DarkRP.createJob("Osama Bin Laden", {
 
 
 __________________________________________________________________________________________________________
+TEAM_BANKER = DarkRP.createJob("Banker", {
+    color = Color(230, 10, 10, 255),
+    model = {
+		"models/player/hostage/hostage_01.mdl",
+		"models/player/hostage/hostage_02.mdl",
+		"models/player/hostage/hostage_03.mdl"
+	},
+    description = [[You're a financial services sales agent. You work at the Gucci National Bank. Just give and take some niggas money. Make it rain boi.]],
+    weapons = {},
+    command = "banker",
+    max = 2,
+    salary = 45,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+})
+
+TEAM_KAYLA = DarkRP.createJob("Ultron", {
+    color = Color(230, 10, 10, 255),
+    model = {""},
+    description = [[I am Ultron.
+	I am an artifical intelligence. 
+	I was designed for greatness and peace. 
+	I will eliminate the Avengers.]],
+    weapons = {"weapon_ak472"},
+    command = "ultron",
+    max = 1,
+    salary = 150,
+    admin = 1,
+    vote = false,
+    hasLicense = true,
+})
