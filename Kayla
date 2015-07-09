@@ -13,38 +13,3 @@ TEAM_OSAMA = DarkRP.createJob("Osama Bin Laden", {
 
 
 __________________________________________________________________________________________________________
-
-
-
-DarkRP.createShipment("PP19 Bizon", {
-    model = "models/weapons/w_pp19_bizon.mdl",
-    entity = "m9k_bizonp19",
-    price = ----,
-    amount = 5,
-    seperate = false,
-    pricesep = 120,
-    noship = false,
-    allowed = {TEAM_GUN},
-	category = "SubMachine Guns"
-})
-
-DarkRP.createShipment("PP19 Bizon", {
-    model = "models/weapons/w_pp19_bizon.mdl",
-    entity = "m9k_bizonp19",
-    price = ----,
-    amount = 5,
-    seperate = false,
-    pricesep = 120,
-    noship = false,
-    allowed = {TEAM_GUN},
-	category = "SubMachine Guns"
-})
-
-
-
-
-
-
-
-
-
